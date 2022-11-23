@@ -105,3 +105,14 @@ h1 {
     width: 50%;
     margin: 5%;
 }
+
+/* FOOTER */
+
+h2 {
+    padding: 2%;
+    background: #00bfff;
+    text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
