@@ -26,6 +26,7 @@ p {
 
 ol, ul {
     list-style: none;
+    font-size: 0;
 }
 
 /* HEADER */
@@ -34,30 +35,55 @@ ol, ul {
     border-bottom: 7px solid #00bfff;
 }
 
-.header__item {
-    padding: 2%;
-    display: inline-block;
-    position: relative;
+/* LOGO */
+.logo {
+    display: flex;
+    flex-direction: row;
 }
 
-.header__item:hover {
+.logo__wrap {
+    margin: 3% 5%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #222327;
+    text-shadow: 10px 10px 0px #00bfff,  -20px -20px 20px rgb( 0, 0, 128);
+    -webkit-text-stroke: 2px #00bfff;  
+}
+
+/* MENU */
+.menu {
+    white-space: nowrap;
+    margin: 3%  2%;
+}
+
+.menu__item {
+    padding: 6%;
+    position: relative;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.menu__item:hover {
     background: #00bfff;
     outline: 1px solid white;
 }
 
-.header__item:hover .header__submenu {
-    display: block;
-    top: 70px;
-    left: 0px;
-}
-
-.header__submenu {
+.menu__submenu {
     display: none;
     position: absolute;
 }
 
-.header__sublink,
-.header__subsublink {
+.menu__item:hover .menu__submenu {
+    display: block;
+    top: 53px;
+    left: 0px;
+}
+
+
+.menu__sublink,
+.menu__subsublink {
     display: block;
     padding: 12px;
     width: auto;
@@ -65,25 +91,26 @@ ol, ul {
     white-space: nowrap;
     background: #00bfff;
     border: 1px solid white;
+    font-size: 1rem;
 }
 
 
-.header__subsubmenu {
+.menu__subsubmenu {
     display: none;
 }
 
-.header__subsublink {
+.menu__subsublink {
     position: relative;
     top: -30px;
     left: 102px;
 }
 
-.header__sublink:hover .header__subsubmenu {
+.menu__sublink:hover .menu__subsubmenu {
     display: block;
 }
 
 /* MAIN */
-h1 {
+h2 {
     padding: 5%;
     font-size: 5rem;
     text-align: center;
@@ -104,7 +131,7 @@ h1 {
 
 /* FOOTER */
 
-h2 {
+h3 {
     padding: 2%;
     background: #00bfff;
     text-align: center;
