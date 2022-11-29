@@ -34,34 +34,30 @@ ol, ul {
     border-bottom: 7px solid #00bfff;
 }
 
-.header__list {
-    display: flex;
-    flex-direction: row;
-}
-
 .header__item {
     padding: 2%;
+    display: inline-block;
     position: relative;
 }
 
 .header__item:hover {
     background: #00bfff;
-    border: 1px solid white;
+    outline: 1px solid white;
 }
 
-.header__item:hover .submenu {
+.header__item:hover .header__submenu {
     display: block;
     top: 70px;
     left: 0px;
 }
 
-.submenu {
+.header__submenu {
     display: none;
     position: absolute;
 }
 
-.sublink,
-.subsublink {
+.header__sublink,
+.header__subsublink {
     display: block;
     padding: 12px;
     width: auto;
@@ -72,17 +68,17 @@ ol, ul {
 }
 
 
-.subsubmenu {
+.header__subsubmenu {
     display: none;
 }
 
-.subsublink {
+.header__subsublink {
     position: relative;
     top: -30px;
-    left: 100px;
+    left: 102px;
 }
 
-.sublink:hover .subsubmenu {
+.header__sublink:hover .header__subsubmenu {
     display: block;
 }
 
@@ -96,7 +92,7 @@ h1 {
     -webkit-text-stroke: 2px #00bfff;
 }
 
-.conteiner {
+.main__conteiner {
     display: flex;
     flex-direction: row;
 }
